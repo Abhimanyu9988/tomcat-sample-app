@@ -1,0 +1,17 @@
+{
+  "extends": ["config:base"],
+  "packageRules": [
+    {
+      "matchPackageNames": ["tomcat"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true,
+      "automergeType": "pr"
+    },
+    {
+      "matchPackageNames": ["tomcat"],
+      "matchUpdateTypes": ["major"],
+      "automerge": false
+    }
+  ]
+}
+
