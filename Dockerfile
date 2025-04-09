@@ -1,5 +1,5 @@
 # Pin to a known version so we have reproducibility & pass CIS checks
-FROM tomcat:11.0.3-jdk17-temurin-jammy
+FROM tomcat:11.0.6-jdk17-temurin-jammy
 
 # Optional: Switch to root only for installation, then drop privileges
 USER root
